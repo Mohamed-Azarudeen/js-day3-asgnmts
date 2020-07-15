@@ -1,0 +1,62 @@
+<! Question-1) Methods of Console functions -->
+<html>
+    <head>
+        <title>Example for Methods of Console functions</title>
+    </head>
+    <body>
+        <h1>Methods of Console functions</h1>
+        <script>
+        // console.log() method 
+        console.log('abc'); 
+        console.log(1); 
+        console.log(true); 
+        console.log(null); 
+        console.log(undefined); 
+        console.log([1, 2, 3, 4]);  
+        console.log({a:1, b:2, c:3}); 
+
+        // console.warn() method 
+        console.warn('This is a warning.'); 
+
+        // console.clear() method 
+        console.clear(); 
+
+        // console.time() and console.timeEnd() method 
+        console.time('abc'); 
+        let fun = function(){ 
+            console.log('fun is running'); 
+        } 
+        let fun2 = function(){ 
+            console.log('fun2 is running..'); 
+        } 
+        fun();  
+        fun2();
+        console.timeEnd('abc'); 
+
+        // console.table() method 
+        console.table({'a':1, 'b':2}); 
+
+        // console.count() method 
+        for(let i=0;i<5;i++){ 
+            console.count(i); 
+        } 
+
+        // console.group() and console.groupEnd() method 
+        console.group('simple'); 
+        console.warn('warning!'); 
+        console.error('error here'); 
+        console.log('vivi vini vici'); 
+        console.groupEnd('simple'); 
+        console.log('new section'); 
+
+        // Custom Console log example 
+        const spacing = '10px'; 
+        const styles = 
+                `padding: ${spacing}; background-color: white; color: green; font-style: 
+                italic; border: 1px solid black; font-size: 2em;`; 
+        console.log('%cLetsUpGrade', styles); 
+
+
+        </script>
+    </body>
+</html>

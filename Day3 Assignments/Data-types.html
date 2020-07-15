@@ -1,0 +1,58 @@
+<! Question-3) Brief intro on Datatypes in JS
+
+-->
+<html>
+    <head>
+        <title>Example for Datatypes in JS</title>
+    </head>
+    <body>
+        <h1>Datatypes in JS</h1>
+        <script>
+            //The string data type is used to represent textual data (i.e. sequences of characters). Strings are created using single or double quotes surrounding one or more characters.
+            var first_name = "Lets";//The String Data Type
+            var last_name = 'Upgrade';//The String Data Type
+            console.log(first_name);
+            console.log(last_name);
+
+            //The number data type is used to represent positive or negative numbers with or without decimal place, or numbers written using exponential notation e.g. 1.5e-4 (equivalent to 1.5x10-4).
+            var age = 25;//The Number Data Type
+            var pi = 3.14//The Number Data Type
+            console.log(age);
+            console.log(pi);
+
+            //The Boolean data type can hold only two values: true or false. It is typically used to store values like yes (true) or no (false), on (true) or off (false)
+            var isLearning = true;//The Boolean Data Type
+            var isReading = false;//The Boolean Data Type
+            console.log(isLearning);
+            console.log(isReading);
+
+            //The undefined data type can only have one value-the special value undefined. If a variable has been declared, but has not been assigned a value, has the value undefined.
+            var num1; //The Undefined Data Type
+            console.log(num1);
+
+            //This is another special data type that can have only one value-the null value. A null value means that there is no value. It is not equivalent to an empty string ("") or 0, it is simply nothing.
+            var a = null;//The Null Data Type
+            console.log(a);
+
+            //The object is a complex data type that allows you to store collections of data.
+            //An object contains properties, defined as a key-value pair. A property key (name) is always a string, but the value can be any data type, like strings, numbers, booleans, or complex data types like arrays, function and other objects.
+            var car = {
+                "modal": "BMW X3",
+                "color": "white",
+                "doors": 5
+                }//The Object Data Type   
+            console.log(car);
+
+            //An array is a type of object used for storing multiple values in single variable. Each value (also called an element) in an array has a numeric position, known as its index, and it may contain data of any data type-numbers, strings, booleans, functions, objects, and even other arrays. The array index starts from 0
+            var colors = ["Red", "Yellow", "Green", "Orange"];//The Array Data Type
+            console.log(colors);
+
+            //The function is callable object that executes a block of code. Since functions are objects, so it is possible to assign them to variables
+            var greeting = function(){ 
+               return "Hello World!"; 
+                }//The Function Data Type
+            console.log(greeting());
+
+        </script>
+    </body>
+</html>
